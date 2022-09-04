@@ -4,7 +4,7 @@ Simple weather app made with React, Typescript, and the Yahoo Weather API.
 
 ## App Preview
 
-![](./public/preview.png)
+![](./public/preview.gif)
 
 # Getting Started with Create React App
 
