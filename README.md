@@ -1,6 +1,6 @@
-# React Weather App
-
 <img src="./public/og-logo.jpg">
+
+# React Weather App
 
 <p style="margin-bottom: 40px">Simple weather application made with React, Typescript, and the Yahoo Weather API.</p>
 
