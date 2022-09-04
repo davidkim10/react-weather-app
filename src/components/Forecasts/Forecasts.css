@@ -1,0 +1,10 @@
+.forecasts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.forecast-item {
+  flex-basis: 200px;
+  flex-grow: 1;
+}

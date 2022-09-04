@@ -1,0 +1,27 @@
+html {
+  --bg-primary: #1e1e1e;
+  --bg-secondary: #282c34;
+  --card-radius: 8px;
+  --padding: 12px 16px;
+}
+
+html,
+body,
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: var(--bg-primary);
+  color: #f8f8f8;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.section-title {
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
