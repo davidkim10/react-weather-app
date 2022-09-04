@@ -1,10 +1,12 @@
 # React Weather App
 
-Simple weather app made with React, Typescript, and the Yahoo Weather API.
+<img src="./public/og-logo.jpg">
 
-## App Preview
+<p style="margin-bottom: 40px">Simple weather application made with React, Typescript, and the Yahoo Weather API.</p>
 
-![](./public/preview.gif)
+## Application Preview
+
+<img src="./public/preview.gif" style="display: block; margin: 20px auto;">
 
 # Getting Started with Create React App
 
