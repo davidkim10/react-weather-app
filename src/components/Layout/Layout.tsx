@@ -17,7 +17,7 @@ const Loading = () => (
     <LoadingState animation="wave" height={300} />
     <div className="layout-loading-container">
       {createNumArray(6).map((n) => (
-        <LoadingState key={n} animation="wave" height="100px" />
+        <LoadingState key={n} animation="wave" height={100} />
       ))}
     </div>
   </div>
