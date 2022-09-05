@@ -16,12 +16,12 @@
   margin: 0 0 10px;
 }
 
-.current-forecast .additional-info {
+.current-forecast .data-points {
   display: flex;
+  font-size: 12px;
   gap: 6px;
   padding: 0;
   list-style-type: none;
-  font-size: 10px;
 }
 
 @media screen and (max-width: 500px) {
@@ -39,6 +39,10 @@
 
   .current-forecast .sub-title {
     font-size: 14px;
+  }
+
+  .current-forecast .data-points {
+    font-size: 10px;
   }
 
   .current-forecast img {

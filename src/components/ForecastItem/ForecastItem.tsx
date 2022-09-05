@@ -13,17 +13,18 @@ interface IForecastItemProps {
 
 export const ForecastItem: React.FC<IForecastItemProps> = (props) => {
   const { day, date, high, low, weatherType } = props;
+  const displayDate = `${day} ${formatDate(date)}`;
+  const tempHigh = formatTemp(high);
+  const tempLow = formatTemp(low);
   return (
     <ForecastCard className="forecast-item">
       <WeatherIcon type={weatherType} />
       <h3 className="description">{weatherType}</h3>
-      <span className="date">
-        {day} {formatDate(date)}
-      </span>
+      <span className="date">{displayDate}</span>
       <div className="temp">
-        <span>H: {formatTemp(high)}</span>
+        <span>H: {tempHigh}</span>
         <span className="temp-break">|</span>
-        <span>L :{formatTemp(low)}</span>
+        <span>L: {tempLow}</span>
       </div>
     </ForecastCard>
   );

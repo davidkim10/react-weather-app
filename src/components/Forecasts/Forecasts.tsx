@@ -15,17 +15,8 @@ export const Forecasts: React.FC<IForecastsProps> = ({ forecasts = [] }: any) =>
     <div className="forecasts">
       <div className="forecasts-container">
         {forecasts.map((forecast: IForecast, i: number) => {
-          const { day, text: weatherType, high, low, date } = forecast;
-          return (
-            <ForecastItem
-              key={i}
-              day={day}
-              weatherType={weatherType as WeatherType}
-              high={high}
-              low={low}
-              date={date}
-            />
-          );
+          const weatherType: WeatherType = forecast.text as WeatherType;
+          return <ForecastItem key={i} weatherType={weatherType} {...forecast} />;
         })}
       </div>
     </div>

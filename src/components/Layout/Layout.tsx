@@ -9,15 +9,15 @@ interface ILayoutProps extends ISearchProps {
   error?: string;
   isEmptyState: boolean;
   isLoading?: boolean;
-  children: React.ReactNode | JSX.Element;
+  children: React.ReactNode;
 }
 
 const Loading = () => (
   <div className="layout-loading-state">
     <LoadingState animation="wave" height={300} />
     <div className="layout-loading-container">
-      {createNumArray(6).map((_, i) => (
-        <LoadingState key={i} animation="wave" height="100px" />
+      {createNumArray(6).map((n) => (
+        <LoadingState key={n} animation="wave" height="100px" />
       ))}
     </div>
   </div>
@@ -33,7 +33,7 @@ export const Layout: React.FC<ILayoutProps> = ({
   onKeyUp,
   value,
 }) => {
-  function renderBody() {
+  function renderBody(): React.ReactNode {
     switch (true) {
       case isLoading:
         return <Loading />;

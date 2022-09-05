@@ -4,7 +4,7 @@ import './ForecastCard.css';
 
 interface IForecastCard {
   className?: string;
-  children: React.ReactNode | JSX.Element;
+  children: React.ReactNode;
   style?: React.CSSProperties;
 }
 

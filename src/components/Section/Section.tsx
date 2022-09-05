@@ -2,7 +2,7 @@ import React from 'react';
 
 interface ISectionProps {
   className?: string;
-  children: React.ReactNode | JSX.Element;
+  children: React.ReactNode;
   style?: React.CSSProperties;
   title?: string;
 }

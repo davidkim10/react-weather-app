@@ -6,6 +6,10 @@ export const createNumArray = (n: number): number[] => Array.from(Array(n).keys(
 
 export const getClassNames = (c: ClassNameArray): string => c.filter(Boolean).join(' ');
 
+export const formatSpeed = (val: string | number): string => `${val}mph`;
+
+export const formatPercent = (n: number): string => `${n}%`;
+
 export const formatTemp = (t: string | number) => `${t}\u00B0F`;
 
 export const formatDate = (d: number): string => {
