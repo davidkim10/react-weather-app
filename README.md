@@ -4,7 +4,7 @@
 
 <p style="margin-bottom: 40px">Simple weather application made with React, Typescript, and the Yahoo Weather API.</p>
 
-## Application Preview
+[![Netlify Status](https://api.netlify.com/api/v1/badges/56340f8b-1053-460e-a5b5-78e4402f0a47/deploy-status)](https://app.netlify.com/sites/dk-weather-app/deploys)
 
 <img src="./public/preview.gif" style="display: block; margin: 20px auto;">
 
