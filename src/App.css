@@ -26,6 +26,22 @@ body,
   text-overflow: ellipsis;
 }
 
+.title-border {
+  position: relative;
+  margin-top: 0;
+}
+
+.title-border:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(90deg, #6937dc, #617af8);
+  border-radius: 4px;
+  height: 4px;
+  width: 30px;
+}
+
 .btn {
   background: linear-gradient(90deg, #6937dc, #617af8);
   border: none;
@@ -41,6 +57,16 @@ body,
   padding: 8px 16px;
 }
 
+.btn.btn-lg {
+  font-size: 16px;
+  padding: 16px 20px;
+}
+
+.btn.btn-block {
+  display: block;
+  width: 100%;
+}
+
 .btn > img {
   display: block;
 }
@@ -53,4 +79,13 @@ body,
 
 .btn:active {
   scale: 0.9;
+}
+
+.empty-state p {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.empty-state .btn {
+  margin: 20px 0 5px;
 }

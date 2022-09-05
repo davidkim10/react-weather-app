@@ -6,13 +6,14 @@ interface IEmptyStateProps {
 
 export const EmptyState: React.FC<IEmptyStateProps> = ({ onDetectLocation }) => {
   return (
-    <div className="state-empty forecast-card" style={{ padding: '20px' }}>
-      <h3>Aloha!</h3>
-      <p style={{ lineHeight: 2, fontSize: '14px' }}>
-        Search for your local weather by entering your ZIP Code. You can also find your
-        local weather by entering your city and state <em>(e.g. New York, NY)</em>.
+    <div className="empty-state forecast-card" style={{ padding: '20px' }}>
+      <h2 className="title-border">Aloha!</h2>
+      <p>Search for your local weather by entering your ZIP Code.</p>
+      <p>
+        You can also find your local weather by entering the city and state{' '}
+        <em>(e.g. New York, NY)</em> or by clicking below!
       </p>
-      <button className="btn btn-md" onClick={onDetectLocation}>
+      <button className="btn btn-lg btn-block" onClick={onDetectLocation}>
         <i
           className="fa fa-map-marker"
           aria-hidden="true"
