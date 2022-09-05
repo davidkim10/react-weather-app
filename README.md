@@ -2,7 +2,7 @@
 
 # React Weather App
 
-<p style="margin-bottom: 40px">Simple weather application made with React, Typescript, and the Yahoo Weather API.</p>
+<p style="margin-bottom: 40px">Simple weather application made with React, Typescript, and the Yahoo Weather API. This application also utilizes the browser geolocation API (modern browsers) to allow users to effortlessly find their local weather.</p>
 
 ## Application Preview
 
