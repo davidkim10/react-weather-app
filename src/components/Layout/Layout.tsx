@@ -10,6 +10,7 @@ interface ILayoutProps extends ISearchProps {
   isEmptyState: boolean;
   isLoading?: boolean;
   children: React.ReactNode;
+  onDetectLocation?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 const Loading = () => (
@@ -28,6 +29,7 @@ export const Layout: React.FC<ILayoutProps> = ({
   error,
   isEmptyState = false,
   isLoading = false,
+  onDetectLocation,
   onChange,
   onClick,
   onKeyUp,
@@ -38,7 +40,7 @@ export const Layout: React.FC<ILayoutProps> = ({
       case isLoading:
         return <Loading />;
       case isEmptyState:
-        return <EmptyState />;
+        return <EmptyState onDetectLocation={onDetectLocation} />;
       default:
         return children;
     }

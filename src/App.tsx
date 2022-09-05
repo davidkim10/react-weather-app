@@ -3,7 +3,7 @@ import { Layout } from './components/Layout/Layout';
 import { Section } from './components/Section/Section';
 import { Forecasts } from './components/Forecasts/Forecasts';
 import { CurrentForecast } from './components/CurrentForecast/CurrentForecast';
-import { getWeather } from './utils';
+import { getWeather, getLocation, LocationType } from './utils';
 import type { ICurrentObservation, IForecast, IWeatherData } from './Interfaces';
 import './App.css';
 
@@ -34,7 +34,7 @@ function App() {
     setForecast(weather.forecasts.slice(1));
   }, [weather]);
 
-  const handleSearch = (query: string) => {
+  const handleSearch = (query: LocationType) => {
     if (!query) {
       setError('Please enter a valid ZIP code');
     } else {
@@ -54,6 +54,23 @@ function App() {
     }
   };
 
+  const handleDetectLocation = () => {
+    setLoading(true);
+
+    const onSuccess: PositionCallback = (position) => {
+      const lat = position.coords.latitude.toString();
+      const long = position.coords.longitude.toString();
+      handleSearch({ lat, long });
+    };
+
+    const onError: PositionErrorCallback = (err) => {
+      setLoading(false);
+      setError(err.message);
+    };
+
+    getLocation(onSuccess, onError);
+  };
+
   const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setSearchQuery(e.target.value);
   };
@@ -70,6 +87,7 @@ function App() {
         isEmptyState={forecast.length <= 0}
         isLoading={loading}
         error={error}
+        onDetectLocation={handleDetectLocation}
         onChange={handleInputChange}
         onClick={() => handleSearch(searchQuery)}
         onKeyUp={handleKeyUp}

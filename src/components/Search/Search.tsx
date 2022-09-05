@@ -1,6 +1,5 @@
 import React from 'react';
 // import { ReactComponent as Icon } from './search-icon.svg';
-import searchIcon from './search-icon.svg';
 import './Search.css';
 
 export interface ISearchProps {
@@ -31,7 +30,7 @@ export const Search: React.FC<ISearchProps> = ({
         value={value}
       />
       <button className="search-btn" onClick={onClick}>
-        <img className="icon" src={searchIcon} alt="search" />
+        <img className="icon" src="/search-icon.svg" alt="search" />
         {/* <Icon height="14px" width="14px" fill="#fff" /> */}
       </button>
     </div>
