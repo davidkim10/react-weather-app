@@ -8,10 +8,6 @@
 
 <img src="./public/preview-01.gif">
 
-### Search by enabling your current location
-
-<img src="./public/preview-02.gif" width="400">
-
 ### Search by ZIP code or by entering city, state
 
 <img src="./public/preview-03.gif" width="400">
