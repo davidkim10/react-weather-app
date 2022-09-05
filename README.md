@@ -8,13 +8,13 @@
 
 ### Search by enabling your current location
 
-<img src="./public/preview-location.gif" style="display: block; margin: 20px auto;">
+<img src="./public/preview-location.gif" width="400">
 
 <div style="height: 30px;"></div>
 
-### Search by ZIP code or by entering city, state <em>New York, NY</em>
+### Search by ZIP code or by entering city, state
 
-<img src="./public/preview.gif" style="display: block; margin: 20px auto;">
+<img src="./public/preview.gif" width="400">
 
 # Getting Started with Create React App
 
