@@ -10,7 +10,7 @@
 
 ### Search by ZIP code or by entering city, state
 
-<img src="./public/preview-03.gif" width="400">
+<img src="./public/preview-03.gif" width="650">
 
 # Getting Started with Create React App
 
